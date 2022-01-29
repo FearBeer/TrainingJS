@@ -54,7 +54,7 @@ expenseItemButton.addEventListener('click', () => {
     for (let i = 0; i < expensesItem.length; i++) {
         let answer1 = expensesItem[i].value;
         let answer2 = expensesItem[++i].value;
-                if (answer1 !== null && answer2 !== null && answer1 !== '' && answer2 !== '') {
+            if (answer1 !== null && answer2 !== null && answer1 !== '' && answer2 !== '') {
             appData.expenses[answer1] = answer2;
             sum += +answer2;           
         } else {
